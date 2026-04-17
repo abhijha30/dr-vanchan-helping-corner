@@ -1,8 +1,5 @@
-// 📅 Show today's date
-const today = new Date();
-const options = { day: 'numeric', month: 'long', year: 'numeric' };
-document.getElementById("date").innerText =
-  today.toLocaleDateString('en-IN', options);
+// 📅 Fixed Date (will not change)
+document.getElementById("date").innerText = "17/04/26";
 
 // 🔗 Open Google Drive link
 function openDrive(link) {
