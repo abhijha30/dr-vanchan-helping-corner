@@ -23,45 +23,43 @@
     “She didn’t just teach us, she taught us how to care.”
   </p>
 
+  <p id="date" class="date"></p>
+
   <hr>
- <p id="date" class="date"></p>
- <h2>📚 Find Notes</h2>
 
-  <div class="filters">
-    <select id="course">
-      <option value="BBA">BBA</option>
-      <option value="BCA">BCA</option>
-    </select>
+  <!-- 📚 DRIVE CARDS -->
+  <h2>📚 Access Notes</h2>
 
-    <select id="semester">
-      <option value="Sem1">Sem1</option>
-      <option value="Sem2">Sem2</option>
-      <option value="Sem3">Sem3</option>
-      <option value="Sem4">Sem4</option>
-      <option value="Sem5">Sem5</option>
-      <option value="Sem6">Sem6</option>
-    </select>
+  <div class="card-container">
 
-    <button onclick="loadNotes()">Search</button>
+    <div class="card" onclick="openDrive('YOUR_BCA_DRIVE_LINK')">
+      <h3>BCA</h3>
+      <p>1st Year | 2nd Year | 3rd Year</p>
+    </div>
+
+    <div class="card" onclick="openDrive('YOUR_BBA_DRIVE_LINK')">
+      <h3>BBA</h3>
+      <p>All Semesters</p>
+    </div>
+
   </div>
 
-  <div id="notes"></div>
-
   <hr>
 
+  <!-- 📤 OPTIONAL UPLOAD -->
   <h2>📤 Upload Notes</h2>
-
   <input type="file" id="fileInput">
   <button onclick="uploadFile()">Upload</button>
 
 </div>
 
-<script src="script.js"></script>
-</body>
-</html>
 <footer class="footer">
   <p>
     A tribute by Avinash and the entire college,<br>
-Her kindness lives on through every note shared here.❤️
+    Her kindness lives on through every note shared here ❤️
   </p>
 </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
