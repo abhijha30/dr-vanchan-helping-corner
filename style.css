@@ -87,3 +87,10 @@ body {
     width: 90%;
   }
 }
+.nep {
+  border: 2px solid #4CAF50;
+}
+
+.nep h3 {
+  color: #4CAF50;
+}
