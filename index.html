@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Vanchan Helping Corner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🌸 Dr. Vanchan Helping Corner</h1>
+
+  <img src="images/vanchan.jpg" class="profile">
+
+  <p class="tribute">
+    In loving memory of Dr. Vanchan,<br>
+    whose kindness and guidance will always inspire us.
+  </p>
+
+  <p class="quote">
+    “She didn’t just teach us, she taught us how to care.”
+  </p>
+
+  <hr>
+
+  <h2>📚 Find Notes</h2>
+
+  <div class="filters">
+    <select id="course">
+      <option value="BBA">BBA</option>
+      <option value="BCA">BCA</option>
+    </select>
+
+    <select id="semester">
+      <option value="Sem1">Sem1</option>
+      <option value="Sem2">Sem2</option>
+      <option value="Sem3">Sem3</option>
+      <option value="Sem4">Sem4</option>
+      <option value="Sem5">Sem5</option>
+      <option value="Sem6">Sem6</option>
+    </select>
+
+    <button onclick="loadNotes()">Search</button>
+  </div>
+
+  <div id="notes"></div>
+
+  <hr>
+
+  <h2>📤 Upload Notes</h2>
+
+  <input type="file" id="fileInput">
+  <button onclick="uploadFile()">Upload</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
